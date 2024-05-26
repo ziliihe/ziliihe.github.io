@@ -85,18 +85,60 @@ $$
 f^{'}(h) = \lim\limits_{x \to h}\frac {f(x)-f(h)}{x - h}
 $$
 
+特别的若 $f(0)=0$
+$$
+\lim\limits_{x \to 0} \frac {f(x)}{x} = f^{'}(0)
+$$
+
+
+
+参数方程
+$$
+\begin{equation}
+y = y(x)=\left\{
+\begin{aligned}
+x & = \arctan(t) \\
+y & = ln(1 + t^2) \\
+\end{aligned}
+\right.
+\end{equation} 
+$$
+求导
+$$
+\frac {dy}{dx} = \frac {\frac{dy}{dt}}{\frac {dx}{dt}} \\
+\frac {d^2 y}{dx^2} = \frac {d}{dx}(\frac {dy}{dx}) = \frac {\frac{d}{dt}(\frac{dy}{dx})}{\frac {dx}{dt}}
+$$
+
+
+曲率
+
+1. $y = f(x)$
+
+$$
+K = |\frac {d\alpha}{ds}| = \frac {|y^{''}|}{(1+y^{'2})^{\frac 32}}
+$$
+
+2. 参数方程 $x = \varphi(x); y = \psi(x)$
+
+$$
+K = \frac {\varphi^{'}(t)\psi^{''}(t) - \varphi^{''}(t)\psi^{'}(t)|}{[\varphi^{'2}(t) + \psi^{'2}(t)]^{\frac 32}}
+$$
+
+
 
 
 
 ## 等价无穷小
 
-| 表达式         | 等价无穷小               | 说明  |
-| -------------- | ------------------------ | ----- |
-| $ln(1+x)$      | $x$                      | 备注1 |
-| $e^x - 1$      | $x$                      | 备注2 |
-| $x - ln(1+x)$  | $\frac {1}{2} \cdot x^2$ | 备注1 |
-| $1-cosx$       | $\frac {1}{2}\cdot x^2$  | 备注3 |
-| $(1 +x)^a - 1$ | $ax$                     | 备注4 |
+| 表达式                                           | 等价无穷小               | 说明  |
+| ------------------------------------------------ | ------------------------ | ----- |
+| $ln(1+x)$                                        | $x$                      | 备注1 |
+| $e^x - 1$                                        | $x$                      | 备注2 |
+| $x - ln(1+x)$                                    | $\frac {1}{2} \cdot x^2$ | 备注1 |
+| $1-cosx$                                         | $\frac {1}{2}\cdot x^2$  | 备注3 |
+| $(1 +x)^a-1$                                     | $ax$                     | 备注4 |
+| $acrsinx, sinx, arctanx, tanx$                   | $x$                      |       |
+| $\lim\limits_{x \to 0}\frac {arcsinx + sinx}{x}$ | $2$                      |       |
 
 
 
@@ -144,21 +186,49 @@ $\int_0^1 cos^2xdx = \int_0^1 \frac {1+cos2x}{2}dx$
 
 
 
+极限和积分
+$$
+\lim\limits_{n \to \infty}\ \frac 1n \cdot \sum_{i=1}^{n}\ ln(1+\frac{i^2}{n^2}) = \int_{0}^{1}ln(1+x^2)dx
+$$
+
+
+分部积分法
+$$
+\int_0^1\ ln(1+x^2) dx = x\cdot ln(1+x^2) - \int_0^1\ x \cdot \frac {2x}{1+x^2}\ dx
+$$
+
+$$
+\int udv = uv - \int vdu
+$$
 
 
 
 
 ## 常用公式
 
-| 名称           | 详情                                     |
-| -------------- | ---------------------------------------- |
-| 立方和         | $a^3 + b^3=(a+b)\cdot (a^2 - ab + b^2)$  |
-| 立方差         | $a^3-b^3=(a-b)\cdot(a^2+ab+b^2)$         |
-| 二项式         | $(a+b)^n=\sum_{r=0}^{n}C_n^r a^{n-r}b^r$ |
-| 正切，正割关系 | $sec^2(x) = 1 + tan^2(x)$                |
-|                |                                          |
+| 名称           | 详情                                             |      |
+| -------------- | ------------------------------------------------ | ---- |
+| 立方和         | $a^3 + b^3=(a+b)\cdot (a^2 - ab + b^2)$          |      |
+| 立方差         | $a^3-b^3=(a-b)\cdot(a^2+ab+b^2)$                 |      |
+| 二项式         | $(a+b)^n=\sum_{r=0}^{n}C_n^r a^{n-r}b^r$         |      |
+| 正切，正割关系 | $sec^2(x) = 1 + tan^2(x)$                        |      |
+| 平方累积和     | $1^2 + 2^2 +\ ...\ +n^2=\frac {n(n+1)(2n+1)}{6}$ |      |
+| 不等式         | $\sqrt{x \cdot y} \le \frac{x + y}{2}$           |      |
+|                |                                                  |      |
 
+备注：
 
+1. 平方累积和 
+
+$$
+(n+1)^3 - n^3 = 3 \cdot n^2 + 3 \cdot n + 1 \\
+n^3 - (n-1)^3 = 3\cdot (n-1)^2+3 \cdot (n-1)+1\\
+... \\
+3^3 - 2^3=3\cdot 2^2 + 3 \cdot 2 + 1 \\
+2^3 - 1^3=3\cdot 1^2 + 3 \cdot 1 + 1
+$$
+
+各项求和即可，再求解平方累积和部分结果。
 
 ## 定理
 
