@@ -1,8 +1,8 @@
 1.1 感知机
 
-感知机 $\to$ 人工神经元 $\to$ `sigmo
+感知机 $\to$ 人工神经元 $\to$ `sigmoid`
 
-$w$：权重，$x$：输入向量，$b$：偏置
+$w$：权重， $x$：输入向量， $b$：偏置
 
 ![image](https://github.com/ziliihe/ziliihe.github.io/assets/35592711/da45f31c-7288-4216-849e-9a1d14b70f88)
 
