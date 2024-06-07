@@ -101,7 +101,7 @@ x & = \arctan(t) \\
 y & = ln(1 + t^2) \\
 \end{aligned}
 \right.
-\end{equation} 
+\end{equation}
 $$
 求导
 $$
@@ -274,7 +274,28 @@ $$
 
 - 因为 $a_1 > 0$，设 $a_k > 0$，则 $a_{k+1} = ln(1+a_k) > 0$，由数学归纳法可知，对任意的 $n$，有 $a_n>0$
 - 因为 $x>0$ 时，$ln(1+x) < x$，所以 $a_{n+1} = ln(1+a_n)<a_n$，所以 $\{a_n\}$ 单调递减，且 $\{a_n\}$ 均大于 0，有下界，故 $\lim\limits_{n \to \infty}a_n$ 存在
-- 令 $\lim\limits_{n \to infty} = A$，对 $a_{n+1} = ln(1+a_n)$ 两边同时取极限得 $A=ln(1+A)$，解得 $A=0$
+- 令 $\lim\limits_{n \to \infty} = A$，对 $a_{n+1} = ln(1+a_n)$ 两边同时取极限得 $A=ln(1+A)$，解得 $A=0$
+
+
+
+### 可导性
+
+$f(x)=x^{\frac 23}$ 在 $x=0$ 处不可导
+
+- $f(0) = 0$
+
+- $\lim\limits_{h \to 0} \frac {f(0+h)-f(0)}{h} = \lim\limits_{h \to 0} \frac {h^{\frac 23}}{h}=\lim\limits_{h \to 0} h^{-\frac{1}{3}}=\infty$​
+- 故不可导
+
+
+
+### 判断题
+
+1. 若 $f(x)$ 在 $x=a$ 处可导，且 $f(a) \ne 0$，则 $|f(x)|$ 在 $x=a$ 处一定可导
+
+- 设 $f(x) > 0$ ，因为 $\lim\limits_{x \to a}f(x) = f(a)$，故存在 $\delta > 0$，当 $x \in (a-\delta, a+\delta)$ 时
+- $f(x) > 0$，则 $\lim\limits_{x \to a}\frac {|f(x)|-|f(a)|}{x - a}=\lim\limits_{x \to a} \frac {f(x) - f(a)}{x-a}=f^{'}(a)$
+- 即 $|f(x)|$ 在 $x=a$ 处可导，同理 $f(a) < 0, |f(x)|$ 在 $x=a$ 处可导。
 
 
 

@@ -4,7 +4,17 @@
 
 $w$：权重， $x$：输入向量， $b$：偏置
 
-![image](https://github.com/ziliihe/ziliihe.github.io/assets/35592711/da45f31c-7288-4216-849e-9a1d14b70f88)
+$$
+\begin{equation}
+output=\left\{
+\begin{aligned}
+0 \ & \ 若 w \cdot x +b \le 0 \\
+1 \ & \ 若 w \cdot x + b > 0\\
+\end{aligned}
+\right.
+\end{equation}
+$$
+
 
 偏置即阈值，决定了决策的难易程度（激活的难易，产生 “1” 的难易）。如果使用多层的感知机网络，能够构造复杂精细的决策机制。
 
