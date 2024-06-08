@@ -20,6 +20,10 @@
 1.  Hints for Computer Systems Design;DOI: 10.1145/773379.806614;Butler W. Lampson; [read: 2024-04-08 ~ 2024-04-xx]
 2.  [book] [操作系统导论](https://book.douban.com/subject/33463930/); [read: 2024-01-01 ~ x]
 
+### Deep Learning
+
+1. [深入浅出神经网络与深度学习](https://abc.hezili.xyz/public/cs/deeplearning/Neural_Networks_and_Deep_Learning.html)
+
 ## Tools
 
 - Paper Get: PaperPanda [Chrome extension]
@@ -39,5 +43,5 @@
 
 ## Some Records
 
-1. [Math Formulas](https://abc.hezili.xyz/public/math.html)
-2. [Latex Symbols](https://abc.hezili.xyz/public/latex.html)
+1. [Math Formulas](https://abc.hezili.xyz/public/math/math.html)
+2. [Latex 常用符号](https://abc.hezili.xyz/public/math/latex.html)
