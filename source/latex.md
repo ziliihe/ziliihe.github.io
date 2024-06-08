@@ -52,11 +52,39 @@
 
 ## 箭头
 
-| 名称     | 符号                | Latex 形式          |
-| -------- | :------------------ | ------------------- |
-| 右双箭头 | $\rightrightarrows$ | `\rightrightarrows` |
 
-https://zhuanlan.zhihu.com/p/263896738
+
+| 名称       | 符号                   | Latex 形式             |
+| ---------- | :--------------------- | ---------------------- |
+| 右双       | $\rightrightarrows$    | `\rightrightarrows`    |
+| 趋近于     | $\to$                  | `\to`                  |
+| 左         | $\gets$                | `\gets`                |
+| 左非       | $\nleftarrow$          | `\nleftarrow`          |
+| 长左       | $\longleftarrow$       | `\longleftarrow`       |
+| 左右双     | $\leftrightarrow$      | `\leftrightarrow`      |
+| 非左右     | $\nleftrightarrow$     | `\nleftrightarrow`     |
+| 上         | $\uparrow$             | `\uparrow`             |
+| 下         | $\downarrow$           | `\downarrow`           |
+| 上下       | $\updownarrow$         | `\updownarrow`         |
+| 东北       | $\nearrow$             | `\nearrow`             |
+| 东南       | $\searrow$             | `\searrow`             |
+| 西南       | $\swarrow$             | `\swarrow`             |
+| 西北       | $\nwarrow$             | `\nwarrow`             |
+| 转弯       | $\Rsh$                 | `\Rsh`                 |
+| 双下       | $\downdownarrows$      | `\downdownarrows`      |
+| 双左       | $\leftleftarrows$      | `\leftleftarrows`      |
+| 左右       | $\leftrightarrows$     | `\leftrightarrows`     |
+| 左尾       | $\leftarrowtail$       | `\leftarrowtail`       |
+| 环状左     | $\looparrowleft$       | `\looparrowleft`       |
+| 钩子左     | $\hookleftarrow$       | `\hookleftarrow`       |
+| 钩子右     | $\hookrightarrow$      | `\hookleftarrow`       |
+| 圆圈横线   | $\multimap$            | `\multimap`            |
+| 波浪双箭头 | $\leftrightsquigarrow$ | `\leftrightsquigarrow` |
+| 波浪右     | $\rightsquigarrow$     | `\rightsquigarrow`     |
+| 右双       | $\twoheadrightarrow$   | `\twoheadrightarrow`   |
+| 左双       | $\twoheadleftarrow$    | `\twoheadleftarrow`    |
+
+
 
 
 
@@ -65,5 +93,32 @@ https://zhuanlan.zhihu.com/p/263896738
 | 名称 | 符号 | Latex 形式             |
 | ---- | ---- | ---------------------- |
 | 空格 | $\ $ | `\ `相当于转义一个空格 |
-|      |      |                        |
+
+
+
+# 5. 括号
+
+```latex
+\begin{equation}
+y(x)=\left\{
+\begin{aligned}
+0\ &\ x >0 \\
+1\ &\ x \le 0 \\
+\end{aligned}
+\right.
+\end{equation}
+```
+
+$$
+\begin{equation}
+y(x)=\left\{
+\begin{aligned}
+0\ &\ x >0 \\
+1\ &\ x \le 0 \\
+\end{aligned}
+\right.
+\end{equation}
+$$
+
+
 
