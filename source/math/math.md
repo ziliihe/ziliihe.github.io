@@ -56,6 +56,9 @@ $$
 
 
 
+- $1+tan^2x=sec^2 x$
+- 
+
 ### 求导
 
 1. $若函数f(x)在x_0处可导，则函数f(x)在x_0处连续。[连续是可导的必要条件]$**函数连续未必可导!!!**，可导是函数连续的充分条件。
@@ -358,3 +361,114 @@ $f(x)=x^{\frac 23}$ 在 $x=0$ 处不可导
 
 
 
+注意：
+
+$\int \frac1xdx = ln|x| + C$ 并不正确，
+
+![img](./assets/epub_26211919_1931.jpeg)
+
+
+
+将右边上移 $\frac12$，函数形式并非 $\ln|x|+C$ 了
+
+![img](./assets/epub_26211919_1932.jpeg)
+
+![img](./assets/epub_26211919_1933.jpeg)
+
+
+
+
+
+$\int_0^{\frac {\pi}{2}}f(cosx) = \int_0^{\frac {\pi}{2}}f(sinx)$
+
+
+
+面积微元 $dS = \frac 12 \cdot [r(\theta)]^2d\theta$ ，扇形面积为
+$$
+S = \frac 12 \int_\alpha^\beta [r(\theta)]^2d\theta
+$$
+绕 $x$ 轴的旋转体体积
+$$
+V_x = \pi \int_a^bf^2(x)dx
+$$
+绕 $y$ 轴的旋转体体积
+$$
+V_y = 2\pi \int_a^b x\cdot f(x)dx
+$$
+
+
+椭圆 $\frac {x^2}{a^2} + \frac {y^2}{b^2}=1$，绕 $x$ 轴旋转体积 $V = \frac 43 \pi ab^2$，绕 $y$ 轴旋转体积 $V=\frac 43 \pi a^2 b$，特别的 $a=b=R$，即球体的体积公式为 $V=\frac 43\pi R^3$
+
+
+
+弧长
+$$
+s = \int_a^b \sqrt{1+f^{'2}(x)}dx
+$$
+参数方程弧长公式
+$$
+ds = \sqrt{\varphi^{'2}(x) + \psi^{'2}(x)} dt
+$$
+星形线
+$$
+\left\{
+\begin{aligned}
+x = acos^3t \\
+y = asin^3t
+\end{aligned}
+\right.
+$$
+![42721-00-148-002.jpg](./assets/epub_32164468_1220.jpeg)
+
+
+
+## 微分方程
+
+可分离变量的微分方程
+$$
+\frac {dy}{g(y)} = f(x)dx
+$$
+齐次方程
+$$
+\frac {dy}{dx} = \varphi(\frac yx)
+$$
+令 $u=\frac yx$,有
+$$
+u + x \cdot \frac {dy} {dx} = \varphi(u)
+$$
+应用分离变量即可。
+
+
+
+一阶线性微分方程
+$$
+\frac {dy}{dx} + P(x) \cdot y = Q(x)
+$$
+当 $Q(x) \equiv 0$ 时，下面方程为一阶齐次线性微分方程
+$$
+\frac {dy}{dx} + P(x) \cdot y = 0
+$$
+一阶齐次线性微分方程的通解为
+$$
+y=C\cdot e^{-\int P(x)dx}
+$$
+一阶线性微分方程通解，设为
+$$
+y = u(x) \cdot e^{-\int P(x)dx}
+$$
+求导
+$$
+y^{'} = u^{'}(x)\cdot e^{-\int P(x)dx} - u(x)\cdot P(x) \cdot e^{-\int P(x)dx}
+$$
+将 $y^{'}$ 代入一阶线性微分方程
+$$
+u^{'}(x) = Q(x) \cdot e^{\int P(x)dx}
+$$
+积分可得 $u(x)$
+$$
+u(x) = \int Q(x) \cdot e^{\int P(x)dx} +C
+$$
+代入一阶线性微分方程通解
+$$
+y = [\int Q(x) \cdot e^{\int P(x)dx}dx + C] \cdot e^{-\int P(x)dx}
+$$
